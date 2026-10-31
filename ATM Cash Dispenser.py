@@ -21,10 +21,16 @@ while p == True:
         count = remaining // value
         print (remaining - (value * count))
         remaining = remaining - value * count
+        cost += 1
     customer = input ("Is there a customer? (Yes/No) : ")
-    if customer == "No":
+    print ("Your transaction for today is complete!")
+    if customer == "Yes":
         p = False
-print ("Your transaction for today is complete!")
+    elif customer == "no":
+        print ("Bye!")
+        break
+      
+
 
 
 
