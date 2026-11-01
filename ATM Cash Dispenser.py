@@ -9,6 +9,7 @@ while p == True:
     if amount <= 0:
         print ("This number is invalid. Please re-enter a positive vaue. ")
         continue
+
     cost = 1
     remaining = amount
     while cost < 4:
@@ -22,27 +23,12 @@ while p == True:
         print (remaining - (value * count))
         remaining = remaining - value * count
         cost += 1
+
     customer = input ("Is there a customer? (Yes/No) : ")
     print ("Your transaction for today is complete!")
+
     if customer == "Yes":
         p = False
     elif customer == "no":
         print ("Bye!")
-        break
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        break  
